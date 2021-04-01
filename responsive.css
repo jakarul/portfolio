@@ -1,0 +1,53 @@
+@media screen and (max-width: 800px) {
+    .main-title h1{
+        font-size: 2.2rem;
+        margin: 40px 0px;
+    }
+    .aboutContent {
+        flex-direction: column;
+        height: 100%;
+    }
+    .about-content h1 {
+        font-size: 2.2rem;
+        padding: 15px 0px;
+    }
+    .contact-btn button {
+        padding: 8px 0px;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .footer-content {
+        padding: 8px 0px;
+        font-size: 1rem;
+    }
+  }
+@media screen and (max-width: 640px) {
+    .nav-item{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+
+  }
+@media screen and (max-width: 550px) {
+    .bannerContent h2 {
+        font-size: 2.1rem;
+        letter-spacing: 10px;
+    }
+    .bannerContent p {
+        font-size: 1.5rem;
+    }
+    .icons ul li a {
+        font-size: 1.5rem;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        margin: 25px 8px;
+    }
+    .banner{
+        height: 100vh;
+    }
+
+  }
