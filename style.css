@@ -14,9 +14,10 @@ html {
     align-items: center;
     justify-content: space-around;
     height: 65px;
-    background-color: rgba(131, 3, 127, 0.86);
+    background-color: rgba(131, 3, 127, 1);
     top: 0px;
     position: sticky;
+    z-index: 10;
 }
 .logo h2 {
     font-size: 2.4rem;
@@ -37,13 +38,14 @@ html {
     color: white;
     font-size: 1.05rem;
     border-radius: 8px;
+    transition: 0.3s;
 }
 .nav-item ul li a:hover {
     background-color: rgb(142, 68, 173);
     color: white;
 }
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)) 0% 0% / cover, url("img/banner.png") center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)) 0% 0% / cover, url("images/banner.png") center center no-repeat;
     height: 625px;
     display: flex;
     align-items: center;
@@ -51,6 +53,7 @@ html {
 }
 .bannerContent {
     text-align: center;
+    padding: 5px;
 }
 .bannerContent h2 {
     font-size: 3rem;
@@ -143,9 +146,8 @@ html {
     border: 2px solid crimson;
     cursor: pointer;
 }
-.services-content:hover{
+.services-content:hover {
     box-shadow: 2px 2px 25px #b99c9c;
-
 }
 .services-content .ico {
     font-size: 2.5rem;
@@ -157,60 +159,60 @@ html {
 .services-content h2 {
     padding: 15px 0px;
 }
-.main-title{
+.main-title {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.main-title h1{
+.main-title h1 {
     font-size: 2.5rem;
     margin: 50px 0px;
     border-bottom: 4px solid crimson;
 }
-.blog{
+.blog {
     background-color: #e75a92;
 }
-.blogContent{
+.blogContent {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-.blog-content{
+.blog-content {
     width: 350px;
     padding: 20px;
     margin: 20px;
     cursor: pointer;
 }
-.blog-img img{
+.blog-img img {
     width: 325px;
 }
-.blog-title{
+.blog-title {
     padding-top: 15px;
 }
-.contact-form{
+.contact-form {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.contact-form form{
+.contact-form form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 60%;
 }
-.contact-form form label{
+.contact-form form label {
     font-size: 1.2rem;
     width: 100%;
 }
-.contact-form form input{
+.contact-form form input {
     padding: 15px 15px;
     width: 100%;
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
-textarea{
+textarea {
     height: 170px;
     padding: 15px 15px;
     width: 100%;
@@ -218,27 +220,30 @@ textarea{
     margin-bottom: 15px;
 }
 
-.contact-btn{
+.contact-btn {
     width: 100%;
 }
-.contact-btn button{
+.contact-btn button {
     width: 100%;
     padding: 10px 0px;
     font-size: 1.2rem;
     text-transform: uppercase;
-    background: #952791;
+    background-color: #952791;
     color: white;
     outline: none;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     font-family: Poppins, sans-serif;
-    
+    transition: 0.3s;
 }
-.footer{
+.contact-btn button:hover {
+    background-color: rgb(142, 68, 173);
+}
+.footer {
     padding-top: 80px;
 }
-.footer-content{
+.footer-content {
     text-align: center;
     padding: 8px 0px;
     font-size: 1.1rem;
@@ -246,56 +251,56 @@ textarea{
     color: white;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
-    .ham {
-        cursor: pointer;
-        -webkit-tap-highlight-color: transparent;
-        transition: transform 400ms;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      .hamRotate.active {
-        transform: rotate(45deg);
-      }
-      .hamRotate180.active {
-        transform: rotate(180deg);
-      }
-      .line {
-        fill:none;
-        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-        stroke:#fff;
-        stroke-width:5.5;
-        stroke-linecap:round;
-      }
-      
-      .ham8 .top {
-        stroke-dasharray: 40 160;
-      }
-      .ham8 .middle {
-        stroke-dasharray: 40 142;
-        transform-origin: 50%;
-        transition: transform 400ms;
-      }
-      .ham8 .bottom {
-        stroke-dasharray: 40 85;
-        transform-origin: 50%;
-        transition: transform 400ms, stroke-dashoffset 400ms;
-      }
-      .ham8.active .top {
-        stroke-dashoffset: -64px;
-      }
-      .ham8.active .middle {
-        transform: rotate(90deg);
-      }
-      .ham8.active .bottom {
-        stroke-dashoffset: -64px;
-      }
-      .back-to-top {
-        display: block;
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #fff;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham8 .top {
+    stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+    stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+    transform: rotate(90deg);
+}
+.ham8.active .bottom {
+    stroke-dashoffset: -64px;
+}
+#back-to-top {
+    display: block;
     font-size: 40px;
     width: 45px;
     text-align: center;
@@ -305,4 +310,4 @@ textarea{
     position: sticky;
     bottom: 30px;
     left: 95%;
-    }
+}
