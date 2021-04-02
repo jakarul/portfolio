@@ -1,5 +1,5 @@
 @media screen and (max-width: 800px) {
-    .main-title h1{
+    .main-title h1 {
         font-size: 2.2rem;
         margin: 40px 0px;
     }
@@ -21,16 +21,45 @@
         padding: 8px 0px;
         font-size: 1rem;
     }
-  }
+}
 @media screen and (max-width: 640px) {
-    .nav-item{
-        display: none;
+    body {
+        overflow-x: hidden;
     }
-    .hamburger{
+    .nav-item {
+        display: none;
+        position: absolute;
+        top: 10vh;
+        height: 90vh;
+        background: #952791;
+    }
+    .nav-item ul {
+        flex-direction: column;
+        width: 100vh;
+        align-items: center;
+        line-height: 4;
+        justify-content: center;
+        height: 100vh;
+    }
+    .hamburger {
         display: block;
     }
-
-  }
+    .burger-active {
+        display: block;
+    }
+    .bannerContent h2 {
+        font-size: 2.6rem;
+        letter-spacing: 12px;
+    }
+    .bannerContent p {
+        font-size: 1.8rem;
+    }
+    .icons ul li a {
+        font-size: 1.8rem;
+        width: 44px;
+        height: 42px;
+    }
+}
 @media screen and (max-width: 550px) {
     .bannerContent h2 {
         font-size: 2.1rem;
@@ -46,8 +75,7 @@
         height: 40px;
         margin: 25px 8px;
     }
-    .banner{
+    .banner {
         height: 100vh;
     }
-
-  }
+}
